@@ -1,37 +1,43 @@
 ---
-page_type: sample
-languages:
-- csharp
+page_type: Sample
+languages: 
+- Japanese
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- Power Apps and Power BI
+description: "Power Platformを利用した軽症患者健康フォローアップシステムのサンプル"
+urlFragment: "NA"
 ---
 
 # Official Microsoft Sample
-
+健康管理アプリケーションは、世界的なCOVID-19ウィルス蔓延下において、COVID-19軽症患者様の体調等の管理をする目的で作成されました。利用の用途としては、COVID-19に感染された患者様で軽症の患者様（以降軽症患者）を、一定期間別宿泊施設において健康を観察をする際に利用されるシステムで、軽症患者様用のアプリケーションと看護師様用のアプリケーション、および管理者のアプリケーションの3種類が含まれています。
+アプリケーションの利用の概要としては、下記を想定しています。
+軽症患者様が宿泊施設において、日々の体温や健康状況を登録をする。
+看護師様は、軽症患者様の状況を把握でき、または代理で健康情報などを登録したり、コメントを入力することができる。
+管理者様は、上記のアカウントなどデータの管理を行う事ができる。
+上記により、軽症患者様と看護師様のコミュニケーションを物理的な接触をすることなく安全にかつ円滑にコミュニケーションをIT技術を利用して行うことができるようになります。
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
 
 Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
 
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
 
 Give a short description for your sample here. What does it do and why is it important?
+-->
 
 ## Contents
+本レポジトリには下記のコンテンツが含まれています。
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
-
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+| File/folder                     　　　　　| Description                                              |
+|------------------------------------------|----------------------------------------------------------|
+| `FukushiFollowUp_1_0_1_1.zip`   　　　　　|Power Apps Unmanaged Solution File                        |
+| `印刷用_軽症状患者レポート_提出版.pbit`   |Power BI Template File                        |
+| `未提出者チェックレポート_提出版.pbit`   　|Power BI Template File                        |
+| `.gitignore`                             | Define what to ignore at commit time.                    |
+| `CHANGELOG.md`                           | List of changes to the sample.                           |
+| `CONTRIBUTING.md`                        | Guidelines for contributing to the sample.               |
+| `README.md`                              | This README file.                                        |
+| `LICENSE`                                | The license for the sample.                              |
 
 ## Prerequisites
 
@@ -46,27 +52,21 @@ Power BIについては、Power BIテンプレートファイル（pbit）を登
 
 ## Running the sample
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+サンプルの実行については、ソリューションファイルをインポート後、一般的なPower Apps のアプリケーションと同様に利用を行う事が可能です。
+Power Apps のアプリには、ユーザーの適切なアクセス権およびPower Apps のセキュリティロールを設定する必要があります。セキュリティロールには、患者用、看護師用、管理者用の3つがあります。
+Power BIレポートについては、Power BIへ発行後アクセスを行う事が可能になります。
 
 ## Key concepts
-## アプリケーションの概要
-健康管理アプリケーションは、世界的なCOVID-19ウィルス蔓延下において、COVID-19軽症患者様の体調等の管理をする目的で作成されました。利用の用途としては、COVID-19に感染された患者様で軽症の患者様（以降軽症患者）を、一定期間別宿泊施設において健康を観察をする際に利用されるシステムで、軽症患者様用のアプリケーションと看護師様用のアプリケーション、および管理者のアプリケーションの3種類が含まれています。
-アプリケーションの利用の概要としては、下記を想定しています。
-軽症患者様が宿泊施設において、日々の体温や健康状況を登録をする。
-看護師様は、軽症患者様の状況を把握でき、または代理で健康情報などを登録したり、コメントを入力することができる。
-管理者様は、上記のアカウントなどデータの管理を行う事ができる。
-上記により、軽症患者様と看護師様のコミュニケーションを物理的な接触をすることなく安全にかつ円滑にコミュニケーションをIT技術を利用して行うことができるようになります。
-
 ## 構成内容
 本テンプレートは下記の要素にて構成されています。
-Power Platform ソリューションファイル
-Power Platform ソリューションファイルには次の内容が含まれています。
-エンティティ
-キャンバスアプリ（軽症患者様用、看護師様用）
-モデル駆動型アプリ（システム管理者様用）
-セキュリティロールファイル
-その他構成ファイル
-データ可視化用ファイル（Power BI：PBITファイル）
+Power Apps ソリューションファイル
+Power Apps ソリューションファイルには次の内容が含まれています。
+ - エンティティ
+ - キャンバスアプリ（軽症患者様用、看護師様用）
+ - モデル駆動型アプリ（システム管理者様用）
+ - セキュリティロールファイル
+ - その他構成ファイル
+ - データ可視化用ファイル（Power BI：PBITファイル）
 
 ## 展開・利用に必要な項目
 本テンプレートを展開・利用するには有償のPower AppsライセンスおよびPower BIのライセンスが必要です。詳しくは下記をご参照下さい。
@@ -105,12 +105,12 @@ https://powerbi.microsoft.com/ja-jp/pricing/
 体調データの提出状況をホテル単位で確認するためのレポートです。
 
 ## FAQ
-Q.内容や機能をカスタマイズすることは可能ですか？
-A.可能です。
-Q.サポートはありますか？
-A.いいえ、ありません。サンプルとしての提供になりますので、ご利用者様の判断にてご利用ください。
-Q.評価版にて利用することができますか？
-A.Power Apps及びPower BIは、双方とも30日の無償評価版があります。評価版にてご利用、機能の確認を行う事は可能です。
+ - Q.内容や機能をカスタマイズすることは可能ですか？
+   - A.可能です。
+ - Q.サポートはありますか？
+    - A.いいえ、ありません。サンプルとしての提供になりますので、ご利用者様の判断にてご利用ください。
+ - Q.評価版にて利用することができますか？
+    - A.Power Apps及びPower BIは、双方とも30日の無償評価版があります。評価版にてご利用、機能の確認を行う事が可能です。
 
 
 ## Contributing
