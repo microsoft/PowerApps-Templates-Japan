@@ -31,11 +31,8 @@ Give a short description for your sample here. What does it do and why is it imp
 | File/folder                     　　　　　| Description                                              |
 |------------------------------------------|----------------------------------------------------------|
 | `FukushiFollowUp_1_0_1_1.zip`   　　　　　|Power Apps Unmanaged Solution File                        |
-| `印刷用_軽症状患者レポート_提出版.pbit`   |Power BI Template File                        |
-| `未提出者チェックレポート_提出版.pbit`   　|Power BI Template File                        |
-| `.gitignore`                             | Define what to ignore at commit time.                    |
-| `CHANGELOG.md`                           | List of changes to the sample.                           |
-| `CONTRIBUTING.md`                        | Guidelines for contributing to the sample.               |
+| `印刷用_軽症状患者レポート_提出版.pbit`   |Power BI Template File                                    |
+| `未提出者チェックレポート_提出版.pbit`   　|Power BI Template File                                   |
 | `README.md`                              | This README file.                                        |
 | `LICENSE`                                | The license for the sample.                              |
 
